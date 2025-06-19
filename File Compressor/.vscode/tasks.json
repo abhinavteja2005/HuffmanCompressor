@@ -1,0 +1,23 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Build Huffman",
+      "type": "shell",
+      "command": "g++",
+      "args": [
+        "-std=c++17", "-O2",
+        "-Iinclude",
+        "main.cpp",
+        "src/huffman_tree.cpp",
+        "src/encoder.cpp",
+        "src/decoder.cpp",
+        "-o", "huffman_compressor"
+      ],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      }
+    }
+  ]
+}

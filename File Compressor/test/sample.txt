@@ -1,0 +1,2 @@
+this is a test file for huffman compression
+this line is repeated again to test compression efficiency
