@@ -4,7 +4,6 @@
 #include <iostream>
 #include <cstdint>
 
-
 // Read the code table from file and rebuild the tree
 HuffmanNode* readCodeTable(std::ifstream& in) {
     size_t tableSize;
