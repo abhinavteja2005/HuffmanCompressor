@@ -1,5 +1,5 @@
-```markdown
-# Huffman File Compressor
+---
+## Huffman File Compressor
 
 This project is a **file compression and decompression tool** based on the **Huffman Coding** algorithm, implemented in **C++**.
 
@@ -7,7 +7,7 @@ Huffman Coding is a popular lossless compression technique that assigns shorter 
 
 ---
 
-## 🔧 Features
+## Features
 
 - Compress any plain text file using Huffman encoding.
 - Decompress encoded files back to their original content.
@@ -26,23 +26,21 @@ File Compressor/
 ├── include/
 │   ├── encoder.hpp
 │   ├── decoder.hpp
-│   └── huffman\_tree.hpp
+│   └── huffman_tree.hpp
 ├── src/
 │   ├── encoder.cpp
 │   ├── decoder.cpp
-│   └── huffman\_tree.cpp
+│   └── huffman_tree.cpp
 ├── .vscode/
 │   └── tasks.json           # Build configuration for VS Code
-└── huffman\_compressor.exe   # Output binary (after build)
+└── huffman_compressor.exe   # Output binary (after build)
 
 ````
-````
-
 ---
 
-## 🚀 How to Build & Run
+## How to Build & Run
 
-### ▶️ Using VS Code (Recommended)
+### Using VS Code (Recommended)
 
 1. Open the `File Compressor` folder in **Visual Studio Code**.
 2. Press `Ctrl + Shift + B` to **build** the project.
@@ -62,7 +60,7 @@ huffman_compressor.exe
 
 ---
 
-## 🛠️ Manual Build (without VS Code)
+##  Manual Build (without VS Code)
 
 If you're using the terminal directly:
 
@@ -78,7 +76,7 @@ Then run it:
 
 ---
 
-## 📌 Usage Notes
+##  Usage Notes
 
 * Input/output methods (like file reading/writing) can be implemented inside `main.cpp` or `encoder.cpp/decoder.cpp`.
 * Make sure the input file exists before running compression.
@@ -86,26 +84,18 @@ Then run it:
 
 ---
 
-## 📄 License
+##  License
 
 This project is licensed for educational and personal use. Attribution appreciated.
 
 ---
 
-## 🙋‍♂️ Author
+##  Author
 
-**Dasari Veera Venkata Abhinav Teja**
+**Dasari Abhinav Teja**
 IIT Kharagpur, CSE
 [GitHub](https://github.com/abhinavteja2005)
 
-````
 
----
-
-Let me know if you want me to add usage examples like:
-```bash
-> Enter file to compress: input.txt
-> Output file: output.huff
-````
 
 
