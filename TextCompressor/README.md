@@ -18,19 +18,10 @@ A simple Huffman encoding and decoding tool with a GUI built using Python and Tk
 
 ## How to Run
 
-### 1. Create virtual environment (optional but recommended)
+### 1.Run the GUI
 
 ```bash
-python -m venv venv
-venv\Scripts\activate  # On Windows
-````
-
-### 2. Install dependencies (None needed! Tkinter is built-in)
-
-### 3. Run the GUI
-
-```bash
-python gui_tkinter.py
+python gui.py
 ```
 
 ## Example
@@ -39,10 +30,6 @@ python gui_tkinter.py
 2. Add more characters (like `b`, `c`, etc.)
 3. Type a string like `abc`, click "Encode"
 4. Paste the binary output into the decode box, click "Decode"
-
-Enjoy Huffman Compression!
-
-```
 
 ---
 

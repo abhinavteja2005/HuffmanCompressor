@@ -58,9 +58,9 @@ This repository contains a comprehensive suite of projects that implement **Huff
 - Flask (for web app) – Install via pip:
   ```bash
   pip install flask
-````
+  ````
 
----
+---  
 
 ###  How to Run Each Project
 
