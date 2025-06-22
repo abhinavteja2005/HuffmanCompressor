@@ -1,5 +1,5 @@
 
-## Huffman Coding Visualizer (Tkinter GUI)
+## Huffman Coding for Texts
 
 A simple Huffman encoding and decoding tool with a GUI built using Python and Tkinter.
 

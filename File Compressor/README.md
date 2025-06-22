@@ -1,4 +1,3 @@
----
 ## Huffman File Compressor
 
 This project is a **file compression and decompression tool** based on the **Huffman Coding** algorithm, implemented in **C++**.
@@ -9,17 +8,16 @@ Huffman Coding is a popular lossless compression technique that assigns shorter 
 
 ## Features
 
-- Compress any plain text file using Huffman encoding.
-- Decompress encoded files back to their original content.
-- Clean and modular code (split into headers and source files).
-- Easily extendable and readable.
-- Built using standard C++17 — no external libraries required.
+* Compress any plain text file using Huffman encoding.
+* Decompress encoded files back to their original content.
+* Clean and modular code (split into headers and source files).
+* Easily extendable and readable.
+* Built using standard C++17 — no external libraries required.
 
 ---
 
 ## 📁 Project Structure
 
-```
 ```bash
 File Compressor/
 ├── main.cpp                 # Entry point
@@ -33,9 +31,14 @@ File Compressor/
 │   └── huffman_tree.cpp
 ├── .vscode/
 │   └── tasks.json           # Build configuration for VS Code
+├── test/                   # Test files and scripts
+│   ├── sample.txt          # Input file
+│   ├── compress.huff       # Compressed output
+│   ├── decompress.txt      # Decompressed output
+│   └── decode.py           # Utility to view .huff as binary
 └── huffman_compressor.exe   # Output binary (after build)
+```
 
-````
 ---
 
 ## How to Build & Run
@@ -44,13 +47,13 @@ File Compressor/
 
 1. Open the `File Compressor` folder in **Visual Studio Code**.
 2. Press `Ctrl + Shift + B` to **build** the project.
-3. This creates an executable named:  
+3. This creates an executable named:
    `huffman_compressor` (or `.exe` on Windows).
 4. To run the program, use the integrated terminal:
 
 ```bash
 ./huffman_compressor
-````
+```
 
 Or on Windows:
 
@@ -60,7 +63,7 @@ huffman_compressor.exe
 
 ---
 
-##  Manual Build (without VS Code)
+## Manual Build (without VS Code)
 
 If you're using the terminal directly:
 
@@ -76,7 +79,7 @@ Then run it:
 
 ---
 
-##  Usage Notes
+## Usage Notes
 
 * Input/output methods (like file reading/writing) can be implemented inside `main.cpp` or `encoder.cpp/decoder.cpp`.
 * Make sure the input file exists before running compression.
@@ -84,18 +87,39 @@ Then run it:
 
 ---
 
-##  License
+## Testing
+
+The `test/` folder contains example files to test the compressor and decompressor:
+
+* `sample.txt`: Input file to be compressed.
+* `compress.huff`: Binary file generated after compression.
+* `decompress.txt`: Output after decompression (should match `sample.txt`).
+* `decode.py`: Python script to view the binary content of `.huff` files.
+
+### Example: View Huffman Binary Output
+
+Run the following Python script to view the raw binary content:
+
+```python
+with open("test/compress.huff", "rb") as f:
+    byte = f.read(1)
+    while byte:
+        print(f'{ord(byte):08b}', end=' ')
+        byte = f.read(1)
+```
+
+This helps verify the encoded bitstream during debugging.
+
+---
+
+## License
 
 This project is licensed for educational and personal use. Attribution appreciated.
 
 ---
 
-##  Author
+## Author
 
 **Dasari Abhinav Teja**
 IIT Kharagpur, CSE
 [GitHub](https://github.com/abhinavteja2005)
-
-
-
-
