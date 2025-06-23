@@ -1,4 +1,4 @@
-## Huffman Coding Compression Suite
+## Huffman Text And File Compressor
 
 This repository contains a comprehensive suite of projects that implement **Huffman Coding** for file compression across multiple platforms and interfaces. It demonstrates the same core algorithm used in different environments — command-line in C++, GUI in Python (Tkinter), and Web (Flask + HTML/CSS/JS).
 
